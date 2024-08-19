@@ -1,5 +1,5 @@
 from django.http.response import HttpResponse , JsonResponse
-from Tapsi.Customer_app.models import  Customer
+from Customer_app.models import  Customer
 
 def Customer_list(request):
     customers = Customer.objects.all()

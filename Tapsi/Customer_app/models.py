@@ -4,7 +4,7 @@ from django.db import models
 class Customer(models.Model):
     first_name = models.CharField(max_length=50 , help_text= "should be 50 chars")
     last_name = models.CharField(max_length=50 , help_text= "should be 50 chars")
-    phone_number = models.IntegerField(max_length=11)
+    phone_number = models.CharField(max_length=11)
     source_x = models.FloatField()
     source_y = models.FloatField()
     destination_x = models.FloatField()
